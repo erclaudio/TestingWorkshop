@@ -1,5 +1,5 @@
 response_hours, response_days = 37.5, 5.0
-# SCENARIO HOMEPAGE IS VSIBLE
+# SCENARIO HOMEPAGE IS VISIBLE
 Given('I navigate to the homepage') do 
     visit 'https://www.gov.uk/calculate-your-holiday-entitlement'
     sleep 0
@@ -11,7 +11,7 @@ And('I should see the homepage') do
     expect(page).to have_link 'Start now'
     expect(page).to have_content 'Use this tool to calculate holiday entitlement for:'
 end
-# SCENARIO CALCULATE THE CORRECT HOLIDAY ENTINLEMENT FOR AN EMPLOYEE WHO WORKS REGULAR HOURS
+# SCENARIO CALCULATE THE CORRECT HOLIDAY ENTITLEMENT FOR AN EMPLOYEE WHO WORKS REGULAR HOURS
 When ("I click on the 'Start now' button") do
     click_link 'Start now'
 end
